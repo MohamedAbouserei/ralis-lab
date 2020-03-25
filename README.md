@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# ralis-lab
+>>>>>>> 0a735fa9d75f9d0d6be3dbc19c1f6dcf0b00afb8
