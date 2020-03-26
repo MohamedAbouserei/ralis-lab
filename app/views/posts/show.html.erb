@@ -9,6 +9,18 @@
   <strong>Title:</strong>
   <%= @post.title %>
 </p>
-
+comments:<br>
+<tbody>
+    <% @post.comments.each do |comment| %>
+      <tr>
+        <td><%= comment.title %></td>
+        <td><%= link_to 'Show', comment %></td>
+        <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
+        <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <br>
+      </tr>
+    <% end %>
+  </tbody>
+  <br>
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>

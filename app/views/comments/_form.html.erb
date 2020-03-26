@@ -12,9 +12,10 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :content %>
-    <%= form.text_field :content %>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
   </div>
+  <%= collection_select(:comment, :post_id,Post.all, 'id', 'name') %>
 
   <div class="actions">
     <%= form.submit %>

@@ -20,7 +20,10 @@
     <%= form.label :title %>
     <%= form.text_field :title %>
   </div>
-
+  <div class="field">
+    <%= form.label :title %>
+  <%= collection_select(:post, :user_id,User.all, 'id', 'Name') %>
+  </div>
   <div class="actions">
     <%= form.submit %>
   </div>
